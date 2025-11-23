@@ -13,6 +13,21 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 	</properties>
+    
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.2.0</version> <!-- Use a recent stable version -->
+    <relativePath/> <!-- lookup parent from repository -->
+</parent>
+
+<dependencies>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <!-- Add other starters as needed, e.g., spring-boot-starter-data-jpa, spring-boot-starter-test -->
+</dependencies>
 
 <build>
     <plugins>
@@ -28,6 +43,10 @@
                 </archive>
             </configuration>
         </plugin>
+        <plugin>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-maven-plugin</artifactId>
+		</plugin>
     </plugins>
 </build>
 
