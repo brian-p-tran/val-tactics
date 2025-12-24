@@ -10,7 +10,7 @@ Required:
 * PostgreSQL Docker Image
 
 ```bash
-    docker pull postgres
+    docker pull postgres:18
 ```
 
 1. Clone Github Repo
