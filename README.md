@@ -19,4 +19,7 @@ Required:
 ```bash
     docker-compose up -d
 ```
-3. 
+3. (Optional) Use psql terminal
+```bash
+    docker exec -it database-postgres-1 psql -U admin -d val_tactics
+```
