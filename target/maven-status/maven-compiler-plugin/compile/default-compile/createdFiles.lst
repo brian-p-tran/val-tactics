@@ -1,4 +1,2 @@
-com\valtactics\Maps.class
-com\valtactics\MapsRepository.class
+com\example\springboot\Application.class
 com\example\springboot\HelloController.class
-com\valtactics\Application.class

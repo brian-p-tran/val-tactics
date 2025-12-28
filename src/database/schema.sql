@@ -40,6 +40,10 @@ CREATE TABLE IF NOT EXISTS maps (
     is_active           BOOLEAN DEFAULT TRUE
 );
 
+INSERT INTO maps (id, name, image_url, is_active)
+VALUES (gen_random_uuid(), 'test', 'test_url', TRUE)
+ON CONFLICT DO NOTHING;
+
 CREATE TYPE agent_role AS ENUM ('duelist', 'initiator', 'controller', 'sentinel');
 
 CREATE TABLE IF NOT EXISTS agents (
